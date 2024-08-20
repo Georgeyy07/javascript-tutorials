@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checkbox</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--the type attribute determines what type of interactable you want to display-->
+    <label for="myCheckbox">Subscribe!</label> <!--the for id is for when you also click on 'subscribe' it also fills the checkbox-->
+    <input type="checkbox" id="myCheckbox"> <br>
+
+    <input type="radio" id="VisaBtn" name="card">
+    <label for="VisaBtn">Visa</label><br>
+
+    <input type="radio" id="masterCardBtn" name="card"><!--without name = 'card' you are able to choose all options-->
+    <label for="masterCardBtn">MasterCArd</label><br>
+
+    <input type="radio" id="PayPalBtn" name="card">
+    <label for="PayPalBtn">PayPal</label><br>
+
+    <button type="submit" id="mySubmit">Submit</button>
+
+    <p id="subResult"></p>
+    <p id="paymentResult"></p>
+
+    <script src="index.js"></script>
+</body>
+</html>
